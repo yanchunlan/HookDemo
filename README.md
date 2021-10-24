@@ -3,13 +3,15 @@
 
 总结文档： [native文档](https://github.com/yanchunlan/SourceCodeSummary/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%9E%81%E8%87%B4%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93/17_nativehook%E6%80%BB%E7%BB%93.txt)
 #### 1. 学会使用hook框架
-    xHook
-    bHook
-    xposed
-    epic
+    xHook (not root) https://github.com/iqiyi/xHook
+    bHook (not root) https://github.com/bytedance/bhook
+    xposed (root) 
+    dexposed (2.0-5.0) https://github.com/alibaba/dexposed
+    epic(5.0-11) https://github.com/tiann/epic
+    frida(root,python + javascript) https://github.com/frida/frida
     
 #### 2. 研究hook框架的原理
-    自定义got hook框架
+    got hook
     inline hook
     
 #### 3. 制作相对应的hook支持的功能

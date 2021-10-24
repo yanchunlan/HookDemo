@@ -1,3 +1,6 @@
+include ':bhook'
+include ':epic'
+include ':dexposed'
 include ':xhook'
 include ':app'
 rootProject.name = "HookDemo"
