@@ -34,7 +34,7 @@ dependencies {
 
 //    implementation 'com.github.tiann:epic:0.11.2'
 //    implementation(name: 'epic-release-0-11-2', ext: 'aar')
-    // File->New->New Module->Import .JAR/.AAR Package 方式解决2次依赖aar问题
+    // File->New->New Module->Import .JAR/.AAR Package 解决2次依赖aar问题
     implementation project(":epic-release-0-11-2")
     implementation "com.github.tiann:FreeReflection:3.1.0"
     implementation 'me.weishu.exposed:exposed-xposedapi:0.4.5'

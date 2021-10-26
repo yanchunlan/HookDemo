@@ -8,6 +8,13 @@
   tools:context=".EpicActivity">
 
   <Button
+    android:onClick="clickHookActivityOnCreate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:text="HookActivityOnCreate" />
+
+  <Button
     android:onClick="clickHookThread"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.bhook.BhookActivity;
 import com.example.epic.EpicActivity;
 import com.example.xhook.XhookActivity;
 
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
   public void clickToXhook(View view) {
     startActivity(new Intent(this, XhookActivity.class));
+  }
+
+  public void clickToBhook(View view) {
+    startActivity(new Intent(this, BhookActivity.class));
   }
 
   public void clickToEpic(View view) {

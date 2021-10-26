@@ -43,6 +43,22 @@ public class EpicActivity extends AppCompatActivity {
 
   }
 
+  public void clickHookActivityOnCreate(View view) {
+    DexposedBridge.findAndHookMethod(EpicActivity.class, "onCreate", Bundle.class, new XC_MethodHook() {
+      @Override
+      protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+        super.beforeHookedMethod(param);
+        Log.i(TAG, "before hooked");
+        if (param.args[0] == null) {
+          param.args[0] = new Bundle();
+        }
+        Bundle b = (Bundle) param.args[0];
+        Log.i(TAG, "bundle: " + param.args[0]);
+        b.putString("activityOnCreate", "true");
+      }
+    });
+  }
+
   static class MyThread extends Thread {
     @Override
     public void run() {
@@ -59,7 +75,6 @@ public class EpicActivity extends AppCompatActivity {
         protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
           super.beforeHookedMethod(param);
           Thread t = (Thread) param.thisObject;
-          t.setName(this.getClass().getSimpleName()+" "+t.getName());
           Log.i(TAG, "thread:" + t + ", started..");
         }
 
@@ -67,7 +82,6 @@ public class EpicActivity extends AppCompatActivity {
         protected void afterHookedMethod(MethodHookParam param) throws Throwable {
           super.afterHookedMethod(param);
           Thread t = (Thread) param.thisObject;
-          t.setName(this.getClass().getSimpleName()+" "+t.getName());
           Log.i(TAG, "thread:" + t + ", exit..");
         }
       }
