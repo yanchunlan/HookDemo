@@ -19,11 +19,17 @@
     app:layout_constraintTop_toTopOf="parent" />
 
   <Button
-    android:id="@+id/button_xhook"
     android:onClick="clickToXhook"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="to xhook"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:onClick="clickToEpic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="to epic"
     android:textAllCaps="false"/>
 
 </LinearLayout>

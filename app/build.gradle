@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.hookdemo"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -44,6 +44,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation project(path: ':xhook')
-    implementation project(path: ':dexposed')
+    implementation project(path: ':bhook')
+//    implementation project(path: ':dexposed') // 已废弃，还有问题，暂不处理
     implementation project(path: ':epic')
+
 }
