@@ -1,3 +1,5 @@
+include ':lib'
+include ':jvmti'
 include ':epic-release-0-11-2'
 include ':bhook'
 include ':epic'

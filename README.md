@@ -22,3 +22,7 @@
     
 [hook总结文档](https://github.com/yanchunlan/SourceCodeSummary/blob/master/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%9E%81%E8%87%B4%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93/17_nativehook%E6%80%BB%E7%BB%93.txt)
 
+#### 其他
+
+    jvmti https://github.com/AndroidAdvanceWithGeektime/JVMTI_Sample/blob/master/jvmtilib/src/androidTest/java/com/dodola/jvmtilib/ExampleInstrumentedTest.java
+    
